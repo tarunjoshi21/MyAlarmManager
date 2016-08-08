@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+    
+    <!--Time-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_normal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_time"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_min_height"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/margin_small"
+        />
+
+    <!--Repeat-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_normal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_frequency"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_min_height"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/margin_small"
+        />
+
+    <!--Note-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:id="@+id/alarm_note"
+        android:textColor="@color/colorPrimary"
+        android:hint="@string/alarm_note_label"/>
+
+</LinearLayout>
